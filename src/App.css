@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+
+body {
+    width: 1200px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header p {
+    font-weight: bold;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.tab {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tab ul {
+    padding: 0; /* Убираем отступы по умолчанию */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.tab li { 
+    list-style-type: none; 
+}
+
+.tab li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.block_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.banner{
+    max-width: 100%;
+    height: auto; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('./img/Background.png');
+}
+ h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px 0; 
+    padding: 10px; 
+    text-align: left; 
+    /* align-items: start; */
+    
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: #FFC107;
+    color: #333;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10%;
+    
+}
+
+.button:hover {
+    background-color: #ffc107d9;
+}
+
+
+.natural-food {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #228B22;
+  font-size: 1.5rem;
+  
+}
+.text{
+    display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 600px;
 }
+.button img {
+    width: 20px; /* Ширина изображения */
+    height: 20px; /* Высота изображения */
+    margin-right: 10px; 
+    padding-left: 2px; 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
